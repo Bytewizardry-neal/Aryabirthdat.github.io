@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 15th Birthday Arya!</title>
+    <style>
+        body {
+            background-image: url('https://raw.githubusercontent.com/Bytewizardry-neal/Private/main/424896481_2455682434636927_111550858461366490_n.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: #f8f8f8;
+            text-align: center;
+            font-family: 'Arial, sans-serif';
+            margin: 0;
+            padding: 80px 20px;
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+        p {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+        }
+        .message {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            animation: fadeIn 0.5s ease-in-out;
+            max-width: 80%;
+            z-index: 1;
+        }
+        button {
+            background-color: #ffd700;
+            padding: 18px 30px;
+            font-size: 1.8em;
+            border: none;
+            cursor: pointer;
+            color: #333;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ffc200;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy 15th Birthday Arya!</h1>
+    <p>On this extraordinary day, as you turn 15, let the world bow in awe at the incredible person you've become. Your presence illuminates our lives, and your journey has only just begun.</p>
+
+    <div id="birthdayMessage" class="message">
+        <p>
+            Dearest Arya,<br>
+            Happy 15th Birthday! Today, the universe celebrates the remarkable soul that you are. Your journey through these 15 years has been nothing short of inspiring, marked by growth, kindness, and a spirit that lifts those around you.<br><br>
+            As you step into this new chapter, envision a canvas waiting for the strokes of your dreams, aspirations, and the endless possibilities that lie ahead. The world is your gallery, and each day is a masterpiece in the making.<br><br>
+            Your laughter echoes like a symphony, resonating with joy and filling hearts with warmth. Your kindness is a beacon, guiding us towards compassion and understanding. At 15, you've already left an indelible mark on the world.<br><br>
+            May this birthday be a celebration not just of a number but of the incredible journey you've undertaken. Here's to countless more milestones, discoveries, and moments that shape the beautiful tapestry of your life.<br><br>
+            Happy Birthday, Arya! May your day be adorned with the love of family and friends, the joy of laughter, and the anticipation of the exciting adventures that await.<br><br>
+            With boundless admiration and love,<br>
+            NealAringale
+        </p>
+    </div>
+
+    
+    <button onclick="showMessage()">Open Birthday Wish</button>
+
+    <div id="popup" class="popup">
+        <p>May this year bring you love, laughter, and all the success you deserve. Cheers to you, Arya!</p>
+        <button onclick="hidePopup()">Close</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('birthdayMessage').style.opacity = '1';
+            playBirthdayWish();
+        }
+
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+
+    </script>
+</body>
+</html>
